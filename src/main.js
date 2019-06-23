@@ -25,7 +25,11 @@ if (process.env.NODE_ENV === 'development') {
   mockXHR();
 }
 
-console.log(process.env.VUE_APP_BASE_API, process.env.NODE_ENV, '当前开发环境');
+console.log({
+  '接口路径': process.env.VUE_APP_BASE_API,
+  '打包模式': process.env.NODE_ENV,
+  '环境变量': process.env.VUE_APP_ENV
+});
 
 // 全局定义过滤器
 Object.keys(filters).forEach(key => {
