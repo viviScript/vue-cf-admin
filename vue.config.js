@@ -1,16 +1,16 @@
-'use strict'
-const path = require('path')
-const defaultSettings = require('./src/config/settings.js')
+'use strict';
+const path = require('path');
+const defaultSettings = require('./src/config/settings.js');
 
 function resolve(dir) {
-  return path.join(__dirname, dir)
+  return path.join(__dirname, dir);
 }
 
-const name = defaultSettings.title || '接处警一体化' // page title
+const name = defaultSettings.title || '接处警一体化'; // page title
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
 // For example, Mac: sudo npm run
-const port = 9528 // 开发环境端口
+const port = 9528; // 开发环境端口
 
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
   // 部署应用包时的基本 URL
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  publicPath: '/',
   // 生成的生产环境构建文件的目录
   outputDir: 'dist',
   // 放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
@@ -66,14 +66,14 @@ module.exports = {
   },
   // webpack 链接 API，用于生成和修改 webapck 配置
   chainWebpack(config) {
-    config.plugins.delete('preload') // TODO: need test
-    config.plugins.delete('prefetch') // TODO: need test
+    config.plugins.delete('preload'); // TODO: need test
+    config.plugins.delete('prefetch'); // TODO: need test
 
     // set svg-sprite-loader
     config.module
       .rule('svg')
       .exclude.add(resolve('src/icons'))
-      .end()
+      .end();
     config.module
       .rule('icons')
       .test(/\.svg$/)
@@ -84,7 +84,7 @@ module.exports = {
       .options({
         symbolId: 'icon-[name]'
       })
-      .end()
+      .end();
 
     // set preserveWhitespace
     config.module
@@ -92,16 +92,16 @@ module.exports = {
       .use('vue-loader')
       .loader('vue-loader')
       .tap(options => {
-        options.compilerOptions.preserveWhitespace = true
-        return options
+        options.compilerOptions.preserveWhitespace = true;
+        return options;
       })
-      .end()
+      .end();
 
     config
     // https://webpack.js.org/configuration/devtool/#development
       .when(process.env.NODE_ENV === 'development',
         config => config.devtool('cheap-source-map')
-      )
+      );
 
     config
       .when(process.env.NODE_ENV !== 'development',
@@ -113,7 +113,7 @@ module.exports = {
             // `runtime` must same as runtimeChunk name. default is `runtime`
               inline: /runtime\..*\.js$/
             }])
-            .end()
+            .end();
           config
             .optimization.splitChunks({
               chunks: 'all',
@@ -137,9 +137,9 @@ module.exports = {
                   reuseExistingChunk: true
                 }
               }
-            })
-          config.optimization.runtimeChunk('single')
+            });
+          config.optimization.runtimeChunk('single');
         }
-      )
+      );
   }
-}
+};
