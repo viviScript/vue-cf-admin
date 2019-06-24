@@ -1,6 +1,6 @@
 ## 简介
 
-`vue-front-frame` 是一个前端集成解决方案，它基于 [Vue.js](https://github.com/vuejs/vue) 和 [element](https://github.com/ElemeFE/element)。它使用了最新的前端技术栈，内置了i18国际化解决方案，动态路由，权限验证等很多功能特性。
+`vue-cf-admin` 是一个前端集成解决方案，它基于 [Vue.js](https://github.com/vuejs/vue) 和 [element](https://github.com/ElemeFE/element)。它使用了最新的前端技术栈，内置了动态路由，权限验证等很多功能特性。
 
 **注意：该项目使用 element-ui@2.3.0+ 版本，所以最低兼容 vue@2.5.0+**
 
@@ -8,10 +8,6 @@
 
 你的本地环境需要安装 [node](http://nodejs.org/) 和 [git](https://git-scm.com/)。我们的技术栈基于 [ES2015+](http://es6.ruanyifeng.com/)、[vue](https://cn.vuejs.org/index.html)、[vuex](https://vuex.vuejs.org/zh-cn/)、[vue-router](https://router.vuejs.org/zh-cn/) and [element-ui](https://github.com/ElemeFE/element)，所有的请求数据都使用[Mock.js](https://github.com/nuysoft/Mock)模拟，提前了解和学习这些知识会对使用本项目有很大的帮助。
 
-配套教程文章
- - [手摸手，带你封装一个 vue component](https://segmentfault.com/a/1190000009090836)
- - [手摸手，带你优雅的使用 icon](https://juejin.im/post/59bb864b5188257e7a427c09)
- 
 ##文档
 请移步[docs](./docs/目录文件说明.md)目录下
 
@@ -34,14 +30,14 @@ npm run dev
 npm run dev
 
 # 构建开发环境
-npm run deveProd
+npm run build:deveProd
 
 # 构建测试环境
-npm run testProd
+npm run build:testProd
 
 
 # 构建生成环境
-npm run build
+npm run build:prod
 ```
 
 ## 其它
