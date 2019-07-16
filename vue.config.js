@@ -85,7 +85,12 @@ module.exports = {
         symbolId: 'icon-[name]'
       })
       .end();
-
+    // 换肤loader
+    const scss = config.module.rule('scss').toConfig();
+    const useable = { ...scss.oneOf[3], test: /\.useable.scss$/ };
+    useable.use = [...useable.use];
+    useable.use[0] = { loader: 'style-loader/useable' };
+    config.module.rule('scss').merge({ oneOf: [useable] });
     // set preserveWhitespace
     config.module
       .rule('vue')
@@ -100,7 +105,7 @@ module.exports = {
     config
     // https://webpack.js.org/configuration/devtool/#development
       .when(process.env.NODE_ENV === 'development',
-        config => config.devtool('cheap-source-map')
+        config => config.devtool('inline-source-map')
       );
 
     config

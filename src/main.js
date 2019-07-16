@@ -10,7 +10,7 @@ import '@/styles/index.scss'; // 全局样式
 import App from './App';
 import store from './store'; // vuex
 import router from './router'; // 路由
-
+import setTheme from './theme'; // 主题配置
 import '@/icons'; // icon
 import '@/config/permission'; // 权限控制
 import * as filters from './filters'; // 全局过滤器
@@ -24,6 +24,8 @@ import { mockXHR } from '../mock';
 if (process.env.NODE_ENV === 'development') {
   mockXHR();
 }
+// 加载默认主题
+setTheme('chalk');
 
 console.log({
   '接口路径': process.env.VUE_APP_BASE_API,
