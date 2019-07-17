@@ -1,0 +1,14 @@
+@include cf-b-views(app-main) {
+  /*50 = navbar  */
+  min-height: calc(100vh - 50px);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.el-popup-parent--hidden {
+  .fixed-header {
+    padding-right: 15px;
+  }
+}

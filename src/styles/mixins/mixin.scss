@@ -26,3 +26,21 @@
   width: 100%;
   height: 100%;
 }
+// components 组件
+@mixin cf-b($block) {
+  $B: 'cf-' + $block !global;
+
+  .#{$B} {
+    @content
+  }
+}
+
+
+// views 组件
+@mixin cf-b-views($block) {
+  $B: 'cf-v-'+$block !global;
+
+  .#{$B} {
+    @content;
+  }
+}

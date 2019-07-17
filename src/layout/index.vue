@@ -1,7 +1,7 @@
 <template>
-  <div :class="classObj" class="app-wrapper">
+  <div :class="classObj" class="cf-v-app-wrapper">
     <!--  判断当前宽度是否是满足PC端，否则开启左侧菜单蒙版  -->
-    <div v-if="get_device === 'mobile' && get_sidebar.opened" class="drawer-bg" @click="handleClickOutside" />
+    <div v-if="get_device === 'mobile' && get_sidebar.opened" class="cf-v-app-wrapper__drawer-bg" @click="handleClickOutside" />
     <sidebar class="sidebar-container" />
     <div class="main-container">
       <!--  fixedHeader 是否固定头部菜单   -->
@@ -60,44 +60,44 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-  @import "~@/styles/mixins/mixin.scss";
-  @import "~@/styles/variables.scss";
+<!--<style lang="scss" scoped>-->
+<!--  @import "~@/styles/mixins/mixin.scss";-->
+<!--  @import "~@/styles/theme-chalk/var.scss";-->
 
-  .app-wrapper {
-    @include clearfix;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    &.mobile.openSidebar{
-      position: fixed;
-      top: 0;
-    }
-  }
-  .drawer-bg {
-    background: #000;
-    opacity: 0.3;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    position: absolute;
-    z-index: 999;
-  }
+<!--  .app-wrapper {-->
+<!--    @include clearfix;-->
+<!--    position: relative;-->
+<!--    height: 100%;-->
+<!--    width: 100%;-->
+<!--    &.mobile.openSidebar{-->
+<!--      position: fixed;-->
+<!--      top: 0;-->
+<!--    }-->
+<!--  }-->
+<!--  .drawer-bg {-->
+<!--    background: #000;-->
+<!--    opacity: 0.3;-->
+<!--    width: 100%;-->
+<!--    top: 0;-->
+<!--    height: 100%;-->
+<!--    position: absolute;-->
+<!--    z-index: 999;-->
+<!--  }-->
 
-  .fixed-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 9;
-    width: calc(100% - #{$sideBarWidth});
-    transition: width 0.28s;
-  }
+<!--  .fixed-header {-->
+<!--    position: fixed;-->
+<!--    top: 0;-->
+<!--    right: 0;-->
+<!--    z-index: 9;-->
+<!--    width: calc(100% - #{$sideBarWidth});-->
+<!--    transition: width 0.28s;-->
+<!--  }-->
 
-  .hideSidebar .fixed-header {
-    width: calc(100% - 54px)
-  }
+<!--  .hideSidebar .fixed-header {-->
+<!--    width: calc(100% - 54px)-->
+<!--  }-->
 
-  .mobile .fixed-header {
-    width: 100%;
-  }
-</style>
+<!--  .mobile .fixed-header {-->
+<!--    width: 100%;-->
+<!--  }-->
+<!--</style>-->
