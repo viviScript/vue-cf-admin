@@ -35,7 +35,7 @@ export default [
       // mock error
       if (!token) {
         return {
-          code: 60204,
+          code: 401,
           message: 'Account and password are incorrect.'
         };
       }
@@ -58,7 +58,7 @@ export default [
       // mock error
       if (!info) {
         return {
-          code: 50008,
+          code: 401,
           message: 'Login failed, unable to get user details.'
         };
       }

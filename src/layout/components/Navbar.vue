@@ -5,6 +5,7 @@
     <breadcrumb class="cf-v-navbar__breadcrumb-container" />
 
     <div class="cf-v-navbar__right-menu">
+      <error-log class="errLog-container right-menu-item hover-effect" />
       <el-dropdown class="cf-v-navbar__avatar-container" trigger="click">
         <div class="cf-v-navbar__avatar-wrapper">
           <img src="../../assets/images/login_icon.png" class="cf-v-navbar__user-avatar">
@@ -36,11 +37,12 @@
 import { mapGetters } from 'vuex';
 import Breadcrumb from '@/components/Breadcrumb';
 import Hamburger from '@/components/Hamburger';
-
+import ErrorLog from '@/components/ErrorLog';
 export default {
   components: {
     Breadcrumb,
-    Hamburger
+    Hamburger,
+    ErrorLog
   },
   computed: {
     ...mapGetters([

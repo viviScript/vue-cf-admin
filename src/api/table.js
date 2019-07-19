@@ -9,9 +9,10 @@ import request from '@/config/request';
  * @param {params} 获取列表
  * */
 export function api_getList(params) {
-  return request({
-    url: '/table/list',
-    method: 'get',
-    params
-  });
+  // return request({
+  //   url: '/table/list',
+  //   method: 'get',
+  //   params
+  // });
+  return request.get('/table/list', params);
 }

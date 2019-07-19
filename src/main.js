@@ -9,11 +9,18 @@ import '@/styles/index.scss'; // 全局样式
 
 import App from './App';
 import store from './store'; // vuex
+import errorStore from './components/ErrorLog/_store'; // errorLog私有store
 import router from './router'; // 路由
 import setTheme from './theme'; // 主题配置
 import '@/icons'; // icon
 import '@/config/permission'; // 权限控制
 import * as filters from './filters'; // 全局过滤器
+import getAxios from './config/request';
+import './components/ErrorLog/index'; // 全局错误监控
+
+// 全局错误监控，因此需要在入口注册私有store
+store.registerModule('_errorLog', errorStore);
+
 /**
  * 如果不想使用mock-server
  * 您希望将MockJs用于模拟api
@@ -43,6 +50,15 @@ Vue.use(ElementUI, { locale });
 
 Vue.config.productionTip = false;
 
+setTimeout(function() {
+  console.error('111');
+  getAxios.post('www.sss.com', {}, { errorTip: false }).then(res => {
+    console.log(res, 'www.sss.com');
+  }).catch(err => {
+    console.log(err, 'www.sss.com');
+  });
+  console.log(obj); // 可以被捕获到，并在onerror中处理
+}, 2000);
 new Vue({
   el: '#app',
   router,

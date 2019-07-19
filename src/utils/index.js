@@ -47,6 +47,36 @@ export function parseTime(time, cFormat) {
   });
   return time_str;
 }
+/**
+ * @description 获取当前系统时间
+ * */
+export function getNowFormatDate() {
+  const now = new Date();
+  const seperator1 = '-';
+  const year = now.getFullYear();
+  let month = now.getMonth() + 1;
+  let date = now.getDate();
+  var hour = now.getHours();// 得到小时
+  var minu = now.getMinutes();// 得到分钟
+  var sec = now.getSeconds();// 得到秒
+  if (month >= 1 && month <= 9) {
+    month = '0' + month;
+  }
+  if (date >= 0 && date <= 9) {
+    date = '0' + date;
+  }
+  if (hour >= 0 && hour <= 9) {
+    hour = '0' + hour;
+  }
+  if (minu >= 0 && minu <= 9) {
+    minu = '0' + minu;
+  }
+  if (sec >= 0 && sec <= 9) {
+    sec = '0' + sec;
+  }
+  const currentdate = year + seperator1 + month + seperator1 + date + ' ' + hour + ':' + minu + ':' + sec;
+  return currentdate;
+}
 
 /**
  * @param {number} time

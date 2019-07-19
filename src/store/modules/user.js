@@ -58,9 +58,8 @@ const actions = {
     return new Promise((resolve, reject) => {
       // 请求用户登录接口，获取token
       api_login({ username: username.trim(), password: password }).then(response => {
-        const { data } = response;
-        commit('MU_SET_TOKEN', data.token);
-        setToken(data.token);
+        commit('MU_SET_TOKEN', response.token);
+        setToken(response.token);
         resolve();
       }).catch(error => {
         reject(error);
@@ -74,7 +73,7 @@ const actions = {
   ac_getInfo({ commit, state }) {
     return new Promise((resolve, reject) => {
       api_getInfo(state.vux_token).then(response => {
-        const { data } = response;
+        const data = response;
         if (!data) {
           reject('Verification failed, please Login again.');
         }
