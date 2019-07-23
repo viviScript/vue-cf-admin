@@ -50,7 +50,7 @@ window.onerror = function(message, url, lineNo, columnNo, error) {
  * @description console.error错误监控
  * */
 window.console.error = function(e) {
-  console.log(JSON.stringify(e), 'console.Error报错'); // 自定义处理
+  // console.log(JSON.stringify(e), 'console.Error报错'); // 自定义处理
   // consoleError && consoleError.apply(window, arguments);
   // store.dispatch('_errorLog/_ac_addErrorLog', {
   //   type: 'consoleError',
