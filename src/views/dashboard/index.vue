@@ -1,6 +1,10 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ get_name }}</div>
+    <el-button type="primary">按钮1</el-button>
+    <el-button type="success">按钮2</el-button>
+    <el-button type="warning">按钮3</el-button>
+    <el-button type="danger">按钮4</el-button>
   </div>
 </template>
 
