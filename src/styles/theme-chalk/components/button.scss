@@ -1,0 +1,79 @@
+
+/* Button
+-------------------------- */
+/*
+.default-button默认按钮
+--------------------------*/
+$--default-button-font-size: 14px !default;
+$--default-button-color: #ffffff !default;
+$--default-button-background: rgba(0, 150, 250, 0.4) !default;
+$--default-button-box-shadow: rgba(0, 150, 250, 1) !default;
+// hover
+$--default-button-hover-color: #ffffff !default;
+$--default-button-hover-border: none !default;
+$--default-button-hover-background: rgba(0, 150, 250, 0.8) !default;
+// disable
+$--default-button-disable-color: rgba(255,255,255,0.4) !default;
+$--default-button-disable-background-color: rgba(78, 178, 244, 0.3) !default;
+/*
+.btn-red 红色按钮
+--------------------------*/
+$--red-button-color: #ffffff !default;
+$--red-button-border: none !default;
+$--red-button-background: rgba(226, 60, 65, 0.4) !default;
+$--red-button-box-shadow: rgba(226, 60, 65, 1) !default;
+// hover
+$--red-button-hover-color: #ffffff !default;
+$--red-button-hover-border: none !default;
+$--red-button-hover-background: rgba(226, 60, 65, 0.8) !default;
+// disable
+$--red-button-disable-color: rgba(255,255,255,0.4) !default;
+$--red-button-disable-background-color: rgba(218, 85, 89, 0.3) !default;
+$--red-button-disable-border: none !default;
+/*
+.btn-blue 深蓝按钮
+--------------------------*/
+$--blue-button-color: #0096fa !default;
+$--blue-button-border: 1px solid rgb(0, 150, 250) !default;
+$--blue-button-background: rgba(0, 150, 250, 0.1) !default;
+$--blue-button-box-shadow: transparent !default;
+// hover
+$--blue-button-hover-color: #0096fa !default;
+$--blue-button-hover-border: 1px solid rgb(0, 150, 250) !default;
+$--blue-button-hover-background: rgba(0, 150, 250, 0.3) !default;
+// disable
+$--blue-button-disable-color: rgba(0, 150, 255, 0.4) !default;
+$--blue-button-disable-background-color: rgba(0, 150, 255, 0.4) !default;
+$--blue-button-disable-border: 1px solid rgb(0, 150, 255) !default;
+
+/*
+.btn-yellow 黄色按钮
+--------------------------*/
+$--yellow-button-color: #ffffff !default;
+$--yellow-button-border: none !default;
+$--yellow-button-background: rgba(226, 131, 7, 0.6) !default;
+$--yellow-button-box-shadow: #e28307 !default;
+// hover
+$--yellow-button-hover-color: #ffffff !default;
+$--yellow-button-hover-border: none !default;
+$--yellow-button-hover-background: rgba(226, 131, 7, 0.8) !default;
+// disable
+$--yellow-button-disable-color: rgba(255, 255, 255, 0.4) !default;
+$--yellow-button-disable-background-color: rgba(226, 131, 7, 0.3) !default;
+$--yellow-button-disable-border: none !default;
+
+/*
+.btn-light 浅蓝按钮
+--------------------------*/
+$--light-button-color: rgba(255, 255, 255, 0.8) !default;
+$--light-button-border: 1px solid rgba(0, 150, 250, 0.6) !default;
+$--light-button-background: rgba(0, 90, 150, 0.1) !default;
+$--light-button-box-shadow: transparent !default;
+// hover
+$--light-button-hover-color: #ffffff !default;
+$--light-button-hover-border: 1px solid rgb(0, 90, 150) !default;
+$--light-button-hover-background: rgba(0, 90, 150, 0.6) !default;
+// disable
+$--light-button-disable-color: rgba(255, 255, 255, 0.4) !default;
+$--light-button-disable-background-color:  rgba(0, 90, 150, 0.4) !default;
+$--light-button-disable-border: 1px solid rgb(0, 90, 150) !default;

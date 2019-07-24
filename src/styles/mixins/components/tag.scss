@@ -1,0 +1,6 @@
+// tag组件
+
+@mixin tag-color($color, $background-color) {
+  color: $color;
+  background: $background-color;
+}

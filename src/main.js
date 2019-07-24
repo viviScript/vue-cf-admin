@@ -29,8 +29,9 @@ store.registerModule('_errorLog', errorStore);
 import { mockXHR } from '../mock';
 // 开发环境开启mock
 if (process.env.NODE_ENV === 'development') {
-  mockXHR();
+  // mockXHR();
 }
+mockXHR();
 // 加载默认主题
 setTheme('chalk');
 

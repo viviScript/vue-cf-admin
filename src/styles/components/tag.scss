@@ -1,0 +1,23 @@
+.default-tag {
+  padding: 0 4px;
+  height: 16px;
+  line-height: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.tag-red {
+  @include tag-color($--tag-red-color, $--tag-red-background-color)
+}
+
+.tag-dark-yellow {
+  @include tag-color($--tag-dark-yellow-color, $--tag-dark-yellow-background-color)
+}
+
+.tag-bright-yellow {
+  @include tag-color($--tag-bright-yellow-color, $--tag-bright-yellow-background-color)
+}
+
+.tag-green {
+  @include tag-color($--tag-green-color, $--tag-green-background-color)
+}

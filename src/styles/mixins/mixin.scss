@@ -1,3 +1,6 @@
+@import "./components/index.scss";
+@import "./views/index.scss";
+
 @mixin clearfix {
   &:after {
     content: "";
@@ -44,3 +47,9 @@
     @content;
   }
 }
+
+
+
+
+
+

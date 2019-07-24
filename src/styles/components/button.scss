@@ -1,5 +1,92 @@
-.el-button--primary {
-  color: #FFF;
-  background-color: $menuActiveText;
-  border-color: $menuActiveText;
+.default-btn {
+  font-size: $--default-button-font-size;
+  color: $--default-button-color;
+  padding: 7px 14px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  //margin-right: 25px;
+  transition: 600ms ease all;
+  position: relative;
+  display: inline-block;
+  background: $--default-button-background;
+  box-shadow: $--default-button-box-shadow 0px 0px 8px inset;
+  &:hover,
+  &:focus {
+    color: $--default-button-hover-color;
+    border-color: transparent;
+    background: $--default-button-hover-background;
+    &:before,
+    &:after {
+      width: 100%;
+      transition: 600ms ease all;
+    }
+  }
+  &.is-disabled, &.is-disabled:focus, &.is-disabled:hover {
+    color: $--default-button-disable-color;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $--default-button-disable-background-color;
+    border-color: transparent;
+  }
+}
+
+.btn-red{
+  @include button-color(
+      $--red-button-color,
+      $--red-button-border,
+      $--red-button-background,
+      $--red-button-box-shadow,
+      $--red-button-hover-color,
+      $--red-button-hover-border,
+      $--red-button-hover-background,
+      $--red-button-disable-color,
+      $--red-button-disable-background-color,
+      $--red-button-disable-border
+  )
+}
+
+.btn-blue{
+  @include button-color(
+      $--blue-button-color,
+      $--blue-button-border,
+      $--blue-button-background,
+      $--blue-button-box-shadow,
+      $--blue-button-hover-color,
+      $--blue-button-hover-border,
+      $--blue-button-hover-background,
+      $--blue-button-disable-color,
+      $--blue-button-disable-background-color,
+      $--blue-button-disable-border
+  )
+}
+
+.btn-yellow{
+  @include button-color(
+      $--yellow-button-color,
+      $--yellow-button-border,
+      $--yellow-button-background,
+      $--yellow-button-box-shadow,
+      $--yellow-button-hover-color,
+      $--yellow-button-hover-border,
+      $--yellow-button-hover-background,
+      $--yellow-button-disable-color,
+      $--yellow-button-disable-background-color,
+      $--yellow-button-disable-border
+  )
+}
+
+.btn-light{
+  @include button-color(
+      $--light-button-color,
+      $--light-button-border,
+      $--light-button-background,
+      $--light-button-box-shadow,
+      $--light-button-hover-color,
+      $--light-button-hover-border,
+      $--light-button-hover-background,
+      $--light-button-disable-color,
+      $--light-button-disable-background-color,
+      $--light-button-disable-border
+  )
 }

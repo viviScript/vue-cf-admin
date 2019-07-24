@@ -1,0 +1,31 @@
+// button组件
+@mixin button-color(
+  $color,
+  $border,
+  $background-color,
+  $box-shadow,
+  $hover-color,
+  $hover-border,
+  $hover-background-color,
+  $disable-color,
+  $disable-background-color,
+  $disable-border
+) {
+  color: $color;
+  border: $border;
+  background: $background-color;
+  box-shadow: $box-shadow 0px 0px 8px inset;
+  &:hover,
+  &:focus {
+    color: $hover-color;
+    border: $hover-border;
+    background: $hover-background-color;
+  }
+  &.is-disabled, &.is-disabled:focus, &.is-disabled:hover {
+    color: $disable-color;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $disable-background-color;
+    border: $disable-border;
+  }
+}
