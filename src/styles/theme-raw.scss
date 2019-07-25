@@ -1,7 +1,9 @@
 @import "~element-ui/packages/theme-chalk/src/mixins/button";
 @import "~element-ui/packages/theme-chalk/src/mixins/mixins";
 @import "~element-ui/packages/theme-chalk/src/mixins/utils";
+
 @import "./mixins/mixin.scss";
+@import "~element-ui/packages/theme-chalk/src/index";
 
 @import "./components/index.scss";
 @import "./views/index.scss";

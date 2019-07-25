@@ -1,7 +1,8 @@
+@import "../common/var";
 @import "./var";
 @import "./components/index.scss";
+@import "./element-var.scss";
 @import "../theme-raw";
-
 body {
   background-image: $bgImgage
 }

@@ -1,0 +1,79 @@
+
+/* Input
+-------------------------- */
+/*
+Input默认样式
+--------------------------*/
+$F--input-inner-color: rgba(255, 255, 255, 0.4) !default;
+$F--input-inner-background: rgba(0, 90, 150, 0.08) !default;
+$F--input-inner-border: 1px solid rgba(0, 150, 250, 1) !default;
+$F--input-inner-box-shadow:  #0095fa 0 0 8px inset !default;
+$F--input-inner-placeholder-color: #999999 !default;
+$F--input-inner-hover-color: #FFFFFF !default;
+$F--input-inner-hover-background: rgba(0, 90, 150, 0.2) !default;
+$F--input-inner-hover-border: 1px solid rgb(0, 150, 250) !default;
+
+/* Input禁用
+-------------------------- */
+$F--input-inner-disabled-background: rgba(0, 90, 150, 0.02) !default;
+$F--input-inner-disabled-border: 1px solid rgba(0, 150, 250, 0.03) !default;
+$F--input-inner-disabled-color: rgba(255, 255, 255, 0.2) !default;
+$F--input-inner-disabled-placeholder-color: rgba(255, 255, 255, 0.2) !default;
+
+/* Input后缀图标
+-------------------------- */
+$F--input-inner-clear-color: #005a96 !default;
+$F--input-inner-clear-hover-color: #0096fa !default;
+
+$F--input-inner-suffix-color: #0096fa !default;
+$F--input-inner-prefix-color: #0096fa !default;
+
+/* Input文本域
+-------------------------- */
+$F--input-inner-textarea-color: rgba(255, 255, 255, 0.4) !default;
+$F--input-inner-textarea-background: rgba(0, 90, 150, 0.08) !default;
+$F--input-inner-textarea-border: 1px solid rgba(0, 150, 250, 1) !default;
+$F--input-inner-textarea-box-shadow: #0095fa 0 0 8px inset !default;
+$F--input-inner-textarea-placeholder-color: #999999 !default;
+
+$F--input-inner-textarea-hover-color: #FFFFFF;
+$F--input-inner-textarea-hover-background: rgba(0, 90, 150, 0.2) !default;
+$F--input-inner-textarea-hover-border: 1px solid rgb(0, 150, 250) !default;
+
+/* Input复合型输入框
+-------------------------- */
+$F--input-inner-group-append-prepend-color: rgba(255, 255, 255, 0.4) !default;
+$F--input-inner-group-append-prepend-background: rgba(0, 90, 150, 0.08) !default;
+$F--input-inner-group-append-prepend-border: 1px solid rgba(0, 150, 250, 1) !default;
+$F--input-inner-group-append-color: #0095fa !default;
+
+/* Input下拉框
+-------------------------- */
+$F--autocomplete-suggestion-color: rgba(255, 255, 255, 0.4) !default;
+$F--autocomplete-suggestion-background: #002f54 !default;
+$F--autocomplete-suggestion-border: 1px solid #0096fa !default;
+$F--autocomplete-suggestion-box-shadow: #0095fa 0 0 8px inset !default;
+$F--autocomplete-suggestion-li-color: #ffffff !default;
+$F--autocomplete-suggestion-li-hover-color: #ffffff !default;
+$F--autocomplete-suggestion-li-hover-background: rgba(0, 150, 250, 0.2) !default;
+
+/* Input下拉框滚动条
+-------------------------- */
+$F--scrollbar__thumb-background: #005a96 !default;
+
+/* Input数量
+-------------------------- */
+$F--input__count-background: transparent !default;
+
+/* select下拉框
+-------------------------- */
+$F--select-dropdown-color: rgba(255, 255, 255, 0.4) !default;
+$F--select-dropdown-background: #002f54 !default;
+$F--select-dropdown-border: 1px solid #0096fa !default;
+$F--select-dropdown-box-shadow: #0095fa 0 0 8px inset !default;
+$F--select-dropdown-li-color: #ffffff !default;
+$F--select-dropdown-li-hover-color: #ffffff !default;
+$F--select-dropdown-li-hover-background: rgba(0, 150, 250, 0.2) !default;
+
+$F--select-dropdown-item-hover-color:  #ffffff !default;
+$F--select-dropdown-item-hover-background: rgba(0, 150, 250, 0.2) !default;

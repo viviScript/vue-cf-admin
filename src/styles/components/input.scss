@@ -1,0 +1,121 @@
+/* Input
+-------------------------- */
+/* Input默认样式
+-------------------------- */
+.el-input__inner {
+  color: $F--input-inner-color;
+  background: $F--input-inner-background;
+  border: $F--input-inner-border;
+  box-shadow: $F--input-inner-box-shadow;
+  height: 30px;
+  &::placeholder {
+    color: $F--input-inner-placeholder-color;
+  }
+  &:hover,
+  &:focus {
+    color:$F--input-inner-hover-color;
+    background: $F--input-inner-hover-background;
+    border: $F--input-inner-hover-border;
+  }
+}
+/* Input禁用
+-------------------------- */
+.el-input.is-disabled .el-input__inner {
+  background-color:  $F--input-inner-disabled-background;
+  border: $F--input-inner-disabled-border;
+  color: $F--input-inner-disabled-color;
+  &::placeholder {
+    color: $F--input-inner-disabled-placeholder-color;
+  }
+}
+/* Input后缀图标
+-------------------------- */
+.el-input .el-input__clear {
+  color: $F--input-inner-clear-color;
+  &:hover {
+    color: $F--input-inner-clear-hover-color;
+  }
+}
+.el-input__suffix {
+  color: $F--input-inner-suffix-color;
+}
+.el-input__prefix {
+  color: $F--input-inner-prefix-color;
+}
+/* Input文本域
+-------------------------- */
+.el-textarea__inner {
+  color: $F--input-inner-textarea-color;
+  background: $F--input-inner-textarea-background;
+  border: $F--input-inner-textarea-border;
+  box-shadow: $F--input-inner-textarea-box-shadow;
+  &::placeholder {
+    color: $F--input-inner-textarea-placeholder-color;
+  }
+  &:hover,
+  &:focus {
+    color: $F--input-inner-textarea-hover-color;
+    background: $F--input-inner-textarea-hover-background;
+    border: $F--input-inner-textarea-hover-border;
+  }
+}
+/* Input复合型输入框
+-------------------------- */
+.el-input-group > .el-input__inner,
+.el-input-group--prepend .el-input__inner{
+  box-shadow: none;
+}
+.el-input-group__append, .el-input-group__prepend {
+  color: $F--input-inner-group-append-prepend-color;
+  background: $F--input-inner-group-append-prepend-background;
+  border: $F--input-inner-group-append-prepend-border;
+}
+
+.el-input-group__append {
+  color: $F--input-inner-group-append-color;
+}
+/* Input下拉框
+-------------------------- */
+.el-autocomplete-suggestion {
+  color: $F--autocomplete-suggestion-color;
+  background: $F--autocomplete-suggestion-background;
+  border: $F--autocomplete-suggestion-border;
+  box-shadow: $F--autocomplete-suggestion-box-shadow;
+  li {
+    color: $F--autocomplete-suggestion-li-color;
+    &:hover{
+      color: $F--autocomplete-suggestion-li-hover-color;
+      background-color: $F--autocomplete-suggestion-li-hover-background;
+    }
+  }
+}
+/* Input下拉框滚动条
+-------------------------- */
+.el-scrollbar__thumb {
+  background-color: $F--scrollbar__thumb-background;
+}
+/* Input数量
+-------------------------- */
+.el-input .el-input__count .el-input__count-inner {
+  background: $F--input__count-background;
+}
+
+/* select下拉框
+-------------------------- */
+.el-select-dropdown {
+  color: $F--select-dropdown-color;
+  background: $F--select-dropdown-background;
+  border: $F--select-dropdown-border;
+  box-shadow: $F--select-dropdown-box-shadow;
+  li {
+    color: $F--select-dropdown-li-color;
+    &:hover{
+      color: $F--select-dropdown-li-hover-color;
+      background-color: $F--select-dropdown-li-hover-background;
+    }
+  }
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  color: $F--select-dropdown-item-hover-color;
+  background-color: $F--select-dropdown-item-hover-background;
+}

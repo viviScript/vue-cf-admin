@@ -14,7 +14,7 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 $--color-white: #fff !default;
 $--color-black: #000 !default;
 
-$--color-primary: #409EFF !default;
+$--color-primary: #005a96 !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
@@ -137,7 +137,7 @@ $--checkbox-checked-icon-color: $--fill-base !default;
 
 $--checkbox-input-border-color-hover: $--color-primary !default;
 
-$--checkbox-bordered-height: 40px !default;
+$--checkbox-bordered-height: 30px !default;
 $--checkbox-bordered-padding: 9px 20px 9px 10px !default;
 $--checkbox-bordered-medium-padding: 7px 20px 7px 10px !default;
 $--checkbox-bordered-small-padding: 5px 15px 5px 10px !default;
@@ -187,7 +187,7 @@ $--radio-checked-icon-color: $--color-primary !default;
 
 $--radio-input-border-color-hover: $--color-primary !default;
 
-$--radio-bordered-height: 40px !default;
+$--radio-bordered-height: 30px !default;
 $--radio-bordered-padding: 12px 20px 0 10px !default;
 $--radio-bordered-medium-padding: 10px 20px 0 10px !default;
 $--radio-bordered-small-padding: 8px 15px 0 10px !default;
@@ -316,7 +316,7 @@ $--notification-danger-color: $--color-danger !default;
 $--input-font-size: $--font-size-base !default;
 $--input-color: $--color-text-regular !default;
 $--input-width: 140px !default;
-$--input-height: 40px !default;
+$--input-height: 30px !default;
 $--input-border: $--border-base !default;
 $--input-border-color: $--border-color-base !default;
 $--input-border-radius: $--border-radius-base !default;
