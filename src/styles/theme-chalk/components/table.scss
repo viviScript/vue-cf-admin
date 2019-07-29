@@ -1,0 +1,46 @@
+
+/* Table
+-------------------------- */
+/*
+Table默认样式
+--------------------------*/
+$F--table-color: rgba(255, 255, 255, 0.8) !default;
+$F--table-background-color: rgba(0,90,150,0.2) !default;
+$F--table-border: 1px solid #005a96 !default;
+$F--table-box-shadow: #0095fa 0 0 6px !default;
+
+/* Table表头文字
+-------------------------- */
+$F--table-thead-color: #00F0F0 !default;
+
+/* Table列背景色
+-------------------------- */
+$F--table-th-background-color: rgba(0,240,240,0.2) !default;
+
+/* Table行背景色
+-------------------------- */
+$F--table-tr-background-color: rgba(0,90,150,0.2) !default;
+
+/* Table单列格下边框
+-------------------------- */
+$F--table-thIsLeaf-td-border-bottom: 1px solid rgba(0,90,150, .6) !default;
+
+/* Table行 鼠标移入背景色
+-------------------------- */
+$F--table-row-hover-background-color: rgba(0,150,250,0.4) !default;
+
+/* Table 斑马纹表格背景色
+-------------------------- */
+$F--table-striped-background: rgba(0,90,150,0.2) !default;
+
+/* Table 斑马纹表格 鼠标移入 背景色
+-------------------------- */
+$F--table-striped-hover-background: rgba(0,150,250,0.4) !default;
+
+/* Table 带边框表格 边框样式
+-------------------------- */
+$F--table-border-th-th-border: 1px solid rgba(0,150,250,0.4) !default;
+
+/* Table 表格after before 样式
+-------------------------- */
+$F--table-after-before-background-color: rgba(0,150,250,0.4) !default;

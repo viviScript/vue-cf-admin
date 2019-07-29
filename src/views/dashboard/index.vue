@@ -67,7 +67,7 @@
               <el-input v-model="form.value1" placeholder="请输入" />
             </el-form-item>
             <el-form-item label="禁用状态">
-              <el-input v-model="form.value2" disabled="true" placeholder="请输入" />
+              <el-input v-model="form.value2" disabled placeholder="请输入" />
             </el-form-item>
             <el-form-item label="可清空">
               <el-input v-model="form.value3" clearable placeholder="请输入" />
@@ -97,7 +97,7 @@
             </el-form-item>
             <el-form-item label="输入建议">
               <el-autocomplete
-                v-model="state1"
+                v-model="form.value8"
                 class="inline-input"
                 :fetch-suggestions="querySearch"
                 placeholder="请输入内容"
@@ -106,7 +106,7 @@
             </el-form-item>
             <el-form-item label="长度限制">
               <el-input
-                v-model="form.value1"
+                v-model="form.value8"
                 type="text"
                 placeholder="请输入内容"
                 maxlength="10"
@@ -134,7 +134,8 @@ export default {
         value4: '',
         value5: '',
         value6: '',
-        value7: ''
+        value7: '',
+        value8: ''
       },
       select: 1,
       restaurants: [],

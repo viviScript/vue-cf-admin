@@ -1,0 +1,74 @@
+/* Table
+-------------------------- */
+/* Table默认样式
+-------------------------- */
+.el-table {
+  color: $F--table-color;
+  background-color: $F--table-background-color;
+  border: $F--table-border;
+  border-radius: 4px;
+  box-shadow: $F--table-box-shadow;
+}
+/* Table表头文字
+-------------------------- */
+.el-table thead {
+  color: $F--table-thead-color;
+}
+/* Table行 行列上下内边距
+-------------------------- */
+.el-table th, .el-table td {
+  padding: 8px 0;
+}
+/* Table列背景色
+-------------------------- */
+.el-table th {
+  background-color: $F--table-th-background-color;
+}
+/* Table行背景色
+-------------------------- */
+.el-table tr {
+  background: $F--table-tr-background-color;
+}
+/* Table单列格下边框
+-------------------------- */
+.el-table th.is-leaf, .el-table td {
+  border-bottom: $F--table-thIsLeaf-td-border-bottom;
+}
+/* Table行 鼠标移入背景色
+-------------------------- */
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: $F--table-row-hover-background-color;
+}
+
+/* Table 斑马纹表格背景色
+-------------------------- */
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: rgba(0,90,150,0.2);
+}
+/* Table 斑马纹表格 鼠标移入 背景色
+-------------------------- */
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: $F--table-striped-hover-background;
+}
+
+/* Table 带边框表格 边框样式
+-------------------------- */
+.el-table--border th, .el-table--border td {
+  border-right: $F--table-border-th-th-border;
+}
+
+/* Table 表格after before 样式
+-------------------------- */
+.el-table--group::after, .el-table--border::after, .el-table::before {
+  background-color: $F--table-after-before-background-color;
+}
+
+.el-table__body tr.hover-row > td,
+.el-table__body tr.hover-row.current-row > td,
+.el-table__body tr.hover-row.el-table__row--striped > td,
+.el-table__body tr.hover-row.el-table__row--striped.current-row > td {
+  background-color: $F--table-striped-hover-background;
+}
+.el-table--enable-row-transition .el-table__body td {
+  transition: none;
+}
