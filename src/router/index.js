@@ -72,6 +72,12 @@ export const constantRoutes = [
         meta: { title: 'Table', icon: 'table' }
       },
       {
+        path: 'checkbox',
+        name: 'Checkbox',
+        component: () => import('@/views/checkbox/index'),
+        meta: { title: 'Checkbox', icon: 'table' }
+      },
+      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),

@@ -63,12 +63,63 @@
   background-color: $F--table-after-before-background-color;
 }
 
+/* Table 表格鼠标移入背景色
+-------------------------- */
 .el-table__body tr.hover-row > td,
 .el-table__body tr.hover-row.current-row > td,
 .el-table__body tr.hover-row.el-table__row--striped > td,
 .el-table__body tr.hover-row.el-table__row--striped.current-row > td {
-  background-color: $F--table-striped-hover-background;
+  background-color: $F--table-hover-row-striped-current-background-color;
 }
+// 动画效果
 .el-table--enable-row-transition .el-table__body td {
   transition: none;
 }
+/* Table 表格固定列 after before样式
+-------------------------- */
+.el-table__fixed::before, .el-table__fixed-right::before {
+  background-color: $F--table-fixed-before-right-background-color;
+}
+/* Table 多级表头背景
+-------------------------- */
+.el-table thead.is-group th {
+  background: $F--table-thead-is-group-th;
+}
+/* Table 多级表头下边框
+-------------------------- */
+.el-table--border th {
+  border-bottom: $F--table-border-th;
+}
+/* Table 单选 选中背景色
+-------------------------- */
+.el-table__body tr.current-row > td {
+  background: $F--table-body-current-row-tr-td;
+}
+/* Table 表格树icon图标颜色
+-------------------------- */
+.el-table__expand-icon {
+  color: #0096FA;
+  font-size: 14px;
+}
+/* Table 筛选默认图标颜色 bottom
+-------------------------- */
+.el-table .sort-caret.ascending {
+  border-bottom-color: $F--table-sord-caret-ascending-descending;
+}
+/* Table 筛选 选中图标颜色 bottom
+-------------------------- */
+.el-table .ascending .sort-caret.ascending {
+  border-bottom-color: $F--table-sord-caret-ascending-descending-active;
+}
+/* Table 筛选默认图标颜色 top
+-------------------------- */
+.el-table .sort-caret.descending {
+  border-top-color: $F--table-sord-caret-ascending-descending;
+}
+/* Table 筛选 选中图标颜色 top
+-------------------------- */
+.el-table .descending .sort-caret.descending {
+  border-top-color: $F--table-sord-caret-ascending-descending-active;
+}
+
+

@@ -4,8 +4,8 @@
 /*
 Table默认样式
 --------------------------*/
-$F--table-color: rgba(255, 255, 255, 0.8) !default;
-$F--table-background-color: rgba(0,90,150,0.2) !default;
+$F--table-color: rgba(255, 255, 255, 1) !default;
+$F--table-background-color: #ffffff !default;
 $F--table-border: 1px solid #005a96 !default;
 $F--table-box-shadow: #0095fa 0 0 6px !default;
 
@@ -19,7 +19,7 @@ $F--table-th-background-color: rgba(0,240,240,0.2) !default;
 
 /* Table行背景色
 -------------------------- */
-$F--table-tr-background-color: rgba(0,90,150,0.2) !default;
+$F--table-tr-background-color: $F--table-background-color !default;
 
 /* Table单列格下边框
 -------------------------- */
@@ -44,3 +44,35 @@ $F--table-border-th-th-border: 1px solid rgba(0,150,250,0.4) !default;
 /* Table 表格after before 样式
 -------------------------- */
 $F--table-after-before-background-color: rgba(0,150,250,0.4) !default;
+
+/* Table 表格鼠标移入背景色
+-------------------------- */
+$F--table-hover-row-striped-current-background-color: rgba(0,150,250,0.4) !default;
+
+/* Table 表格固定列 after before样式
+-------------------------- */
+$F--table-fixed-before-right-background-color: rgba(0,150,250,0.4) !default;
+
+/* Table 多级表头背景
+-------------------------- */
+$F--table-thead-is-group-th: rgba(0,240,240,0.2) !default;
+
+/* Table 多级表头下边框
+-------------------------- */
+$F--table-border-th: 1px solid rgba(0,90,150,0.6) !default;
+
+/* Table 单选 选中背景色
+-------------------------- */
+$F--table-body-current-row-tr-td: rgba(0,150,250,0.4) !default;
+
+/* Table 表格树icon图标颜色
+-------------------------- */
+$F--table-expand-icon-color: #0096FA !default;
+
+/* Table 筛选默认图标颜色 bottom top
+-------------------------- */
+$F--table-sord-caret-ascending-descending: rgba(0,240,240, 0.4) !default;
+
+/* Table 筛选 选中图标颜色 bottom top
+-------------------------- */
+$F--table-sord-caret-ascending-descending-active: rgba(0,240,240,1) !default;
