@@ -1,0 +1,67 @@
+/* Checkbox
+-------------------------- */
+/* Checkbox默认样式
+-------------------------- */
+.el-checkbox {
+  color: $F--checkbox-color;
+}
+/* Checkbox 未选中 复选框样式
+-------------------------- */
+.el-checkbox__inner {
+  background: $F--checkbox__inner-background;
+  border: $F--checkbox__inner-border;
+}
+/* Checkbox 已选中 复选框样式
+-------------------------- */
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: $F--checkbox__inner-isChecked-background;
+  border-color: $F--checkbox__inner-isChecked-border;
+}
+/* Checkbox 已选中 文本样式
+-------------------------- */
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: $F--checkbox__inner-isChecked-label-color;
+}
+/* Checkbox 禁用状态 未选中 复选框
+-------------------------- */
+.el-checkbox__input.is-disabled .el-checkbox__inner {
+  background-color: $F--checkbox__inner-isDisabled-background;
+  border-color: $F--checkbox__inner-isDisabled-border;
+}
+/* Checkbox 禁用状态 未选中 文本
+-------------------------- */
+.el-checkbox__input.is-disabled + span.el-checkbox__label {
+  color: $F--checkbox__inner-isDisabled-label-color;
+}
+/* Checkbox 禁用状态 已选中 复选框
+-------------------------- */
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+  background-color: $F--checkbox__input-isDisabled-isChecked-background;
+  border-color: $F--checkbox__input-isDisabled-isChecked-border;
+}
+/* Checkbox 禁用状态 已选中 文本
+-------------------------- */
+.el-checkbox__input.is-disabled + span.el-checkbox__label {
+  color: $F--checkbox__input-isDisabled-label-color;
+}
+/* Checkbox 禁用状态 未全选
+-------------------------- */
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: $F--checkbox__input-isIndeterminate-background;
+  border-color: $F--checkbox__input-isIndeterminate-border-color;
+}
+/* Checkbox 带边框 选中状态
+-------------------------- */
+.el-checkbox.is-bordered.is-checked {
+  border-color: $F--checkbox-isBordered-isChecked-border-color;
+}
+/* Checkbox 带边框 未选中状态
+-------------------------- */
+.el-checkbox.is-bordered {
+  border: $F--checkbox-isBordered-border;
+}
+/* Checkbox 带边框 未选中状态 禁用
+-------------------------- */
+.el-checkbox.is-bordered.is-disabled {
+  border-color: $F--checkbox-isBordered-isDisabled-border;
+}

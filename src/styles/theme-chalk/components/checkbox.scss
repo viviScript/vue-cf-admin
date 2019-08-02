@@ -1,0 +1,55 @@
+
+/* Checkbox
+-------------------------- */
+/* Checkbox默认样式
+--------------------------*/
+$F--checkbox-color: #CCCCCC !default;
+
+/* Checkbox 未选中 复选框样式
+-------------------------- */
+$F--checkbox__inner-background: transparent !default;
+$F--checkbox__inner-border: 1px solid rgba(0,90,150,1) !default;
+
+/* Checkbox 已选中 复选框样式
+-------------------------- */
+$F--checkbox__inner-isChecked-background: rgba(0,150,250,1) !default;
+$F--checkbox__inner-isChecked-border: rgba(0,90,150,1) !default;
+
+/* Checkbox 已选中 文本样式
+-------------------------- */
+$F--checkbox__inner-isChecked-label-color: #0096FA !default;
+
+/* Checkbox 禁用状态 未选中 复选框
+-------------------------- */
+$F--checkbox__inner-isDisabled-background: transparent !default;
+$F--checkbox__inner-isDisabled-border: rgba(0,90,150, 0.3) !default;
+
+/* Checkbox 禁用状态 未选中 文本
+-------------------------- */
+$F--checkbox__inner-isDisabled-label-color: rgba(255,255,255, 0.2) !default;
+
+/* Checkbox 禁用状态 已选中 复选框
+-------------------------- */
+$F--checkbox__input-isDisabled-isChecked-background: rgba(0,150,250, 0.3) !default;
+$F--checkbox__input-isDisabled-isChecked-border: rgba(0,90,150, 0.3) !default;
+
+/* Checkbox 禁用状态 已选中 文本
+-------------------------- */
+$F--checkbox__input-isDisabled-label-color: rgba(255,255,255, 0.2) !default;
+
+/* Checkbox 禁用状态 未全选
+-------------------------- */
+$F--checkbox__input-isIndeterminate-background: rgba(0,150,250,1) !default;
+$F--checkbox__input-isIndeterminate-border-color: rgba(0,90,150,1) !default;
+
+/* Checkbox 带边框 选中状态
+-------------------------- */
+$F--checkbox-isBordered-isChecked-border-color: #0094F7 !default;
+
+/* Checkbox 带边框 未选中状态
+-------------------------- */
+$F--checkbox-isBordered-border: 1px solid #005A96 !default;
+
+/* Checkbox 带边框 未选中状态 禁用
+-------------------------- */
+$F--checkbox-isBordered-isDisabled-border: rgba(0,148,247, 0.3) !default;

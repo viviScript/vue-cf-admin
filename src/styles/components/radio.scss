@@ -1,0 +1,51 @@
+/* Radio
+-------------------------- */
+/* Radio 默认未选中 文字颜色
+-------------------------- */
+.el-radio {
+  color: $F--radio-color;
+}
+/* Radio 默认未选中 选框颜色
+-------------------------- */
+.el-radio__inner {
+  background: $F--radio_inner-background;
+  border-color: $F--radio_inner-border-color;
+}
+/* Radio 默认选中 文字颜色
+-------------------------- */
+.el-radio__input.is-checked + .el-radio__label {
+  color: $F--radio_inner-checked-label-color;
+}
+/* Radio 默认选中 选框颜色
+-------------------------- */
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: $F--radio_inner-checked-border-color;
+  background: $F--radio_inner-checked-background;
+}
+/* Radio 选框禁用 文字颜色
+-------------------------- */
+.el-radio__input.is-disabled + span.el-radio__label {
+  color: $F--radio_inner-disabled-label-color;
+}
+/* Radio 选框禁用 选框颜色
+-------------------------- */
+.el-radio__input.is-disabled .el-radio__inner {
+  border-color: $F--radio_inner-disabled-border-color;
+  background: $F--radio_inner-disabled-background;
+}
+/* Radio 选框选中 禁用 选框颜色
+-------------------------- */
+.el-radio__input.is-disabled.is-checked .el-radio__inner {
+  background: $F--radio_inner-disabled-checked-background;
+  border-color: $F--radio_inner-disabled-checked-border-color;
+}
+/* Radio 选框选中 带边框 边框颜色
+-------------------------- */
+.el-radio.is-bordered.is-checked {
+  border-color: $F--radio-bordered-checked-border-color;
+}
+/* Radio 默认 带边框 边框颜色
+-------------------------- */
+.el-radio.is-bordered {
+  border-color: $F--radio-bordered-border-color;
+}

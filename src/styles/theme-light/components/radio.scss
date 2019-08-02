@@ -1,0 +1,42 @@
+
+/* Radio
+-------------------------- */
+/* Radio默认样式
+--------------------------*/
+$F--radio-color: #CCCCCC !default;
+
+/* Radio 默认未选中 选框颜色
+-------------------------- */
+$F--radio_inner-background: transparent !default;
+$F--radio_inner-border-color: rgba(0,90,150,1) !default;
+
+/* Radio 默认选中 文字颜色
+-------------------------- */
+$F--radio_inner-checked-label-color: #0096FA !default;
+
+/* Radio 默认选中 选框颜色
+-------------------------- */
+$F--radio_inner-checked-background: rgba(0,150,250,1) !default;
+$F--radio_inner-checked-border-color: rgba(0,90,150,1) !default;
+
+/* Radio 选框禁用 文字颜色
+-------------------------- */
+$F--radio_inner-disabled-label-color: rgba(255,255,255, 0.2) !default;
+
+/* Radio 选框禁用 选框颜色
+-------------------------- */
+$F--radio_inner-disabled-background: transparent !default;
+$F--radio_inner-disabled-border-color: rgba(0,90,150, 0.3) !default;
+
+/* Radio 选框选中 禁用 选框颜色
+-------------------------- */
+$F--radio_inner-disabled-checked-background: rgba(0,150,250, 0.3) !default;
+$F--radio_inner-disabled-checked-border-color: rgba(0,90,150, 0.3) !default;
+
+/* Radio 选框选中 带边框 边框颜色
+-------------------------- */
+$F--radio-bordered-checked-border-color: rgba(0,148,247,1) !default;
+
+/* Radio 默认 带边框 边框颜色
+-------------------------- */
+$F--radio-bordered-border-color: rgba(0,90,150,1) !default;
