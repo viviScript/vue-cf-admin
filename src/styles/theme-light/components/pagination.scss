@@ -1,0 +1,46 @@
+/* Pagination
+-------------------------- */
+/* Pagination 默认 文字颜色
+-------------------------- */
+$F--pagination-color: #CCCCCC !default;
+
+/* Pagination 单列 背景色
+-------------------------- */
+$F--pagination-li-background-color: rgba(0,240,240, 0.1) !default;
+$F--pagination-li-border-right: 1px solid rgba(230,230,230, 0.1) !default;
+
+$F--pagination-li-first-child-border-left: 1px solid rgba(230,230,230, 0.1) !default;
+
+/* Pagination 左右按钮 背景色 文字颜色
+-------------------------- */
+$F--pagination-btn-prev-next-color: rgba(255,255,255, 0.6) !default;
+$F--pagination-btn-prev-next-background: rgba(0,240,240, 0.1) !default;
+
+/* Pagination 左右按钮 禁用 背景色 字体色
+-------------------------- */
+$F--pagination-button--disabled-color:rgba(255,255,255, 0.2) !default;
+$F--pagination-button--disabled-background: rgba(0,240,240, 0.1) !default;
+
+/* Pagination 多页情况下 省略按钮颜色
+-------------------------- */
+$F--pagination-li-btn-quicknext-quickprev-color: rgba(255,255,255, 0.6) !default;
+
+/* Pagination 页码选中 背景色 内发光
+-------------------------- */
+$F--pager-li-active-background: rgba(0,240,240, 0.2) !default;
+$F--pager-li-active-box-shadow: #0096fa 0 0 8px inset !default;
+
+/* Pagination 带背景的分页 字体色 背景色
+-------------------------- */
+$F--pagination-isBackground-prev-next-li-color: rgba(255,255,255, 0.6) !default;
+$F--pagination-isBackground-prev-next-li-background: rgba(0,240,240, 0.1) !default;
+
+/* Pagination 带背景的分页 选中 字体色 背景色
+-------------------------- */
+$F--pagination-isBackground-pager-li-active-color: #409EFF !default;
+$F--pagination-isBackground-pager-li-active-background: rgba(0,240,240, 0.2) !default;
+$F--pagination-isBackground-pager-li-active-box-shadow: #0096fa 0 0 8px inset !default;
+
+/* Pagination 附加功能 页码label文字 颜色
+-------------------------- */
+$F--pagination-total-jump-color: rgba(255,255,255, 0.6) !default;

@@ -1,0 +1,61 @@
+/* Pagination
+-------------------------- */
+/* Pagination 默认 文字颜色
+-------------------------- */
+.el-pagination {
+  color: $F--pagination-color;
+}
+/* Pagination 单列 背景色
+-------------------------- */
+.el-pager li {
+  background: $F--pagination-li-background-color;
+  border-right: $F--pagination-li-border-right;
+}
+.el-pager li:first-child {
+  border-left: $F--pagination-li-first-child-border-left;
+}
+/* Pagination 左右按钮 背景色 文字颜色
+-------------------------- */
+.el-pagination .btn-prev, .el-pagination .btn-next {
+  color: $F--pagination-btn-prev-next-color;
+  background: $F--pagination-btn-prev-next-background;
+}
+/* Pagination 左右按钮 禁用 背景色 字体色
+-------------------------- */
+.el-pagination button:disabled {
+  color: $F--pagination-button--disabled-color;
+  background-color: $F--pagination-button--disabled-background;
+}
+/* Pagination 多页情况下 省略按钮颜色
+-------------------------- */
+.el-pager li.btn-quicknext, .el-pager li.btn-quickprev {
+  color: $F--pagination-li-btn-quicknext-quickprev-color;
+}
+/* Pagination 页码选中 背景色 内发光
+-------------------------- */
+.el-pager li.active {
+  background-color: $F--pager-li-active-background;
+  box-shadow: $F--pager-li-active-box-shadow;
+  border-radius: 2px;
+}
+/* Pagination 带背景的分页 字体色 背景色
+-------------------------- */
+.el-pagination.is-background .btn-prev, .el-pagination.is-background .btn-next, .el-pagination.is-background .el-pager li {
+  color: $F--pagination-isBackground-prev-next-li-color;
+  background: $F--pagination-isBackground-prev-next-li-background;
+}
+/* Pagination 带背景的分页 选中 字体色 背景色
+-------------------------- */
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  color: $F--pagination-isBackground-pager-li-active-color;
+  background-color: $F--pagination-isBackground-pager-li-active-background;
+  box-shadow: $F--pagination-isBackground-pager-li-active-box-shadow;
+}
+/* Pagination 附加功能 页码label文字 颜色
+-------------------------- */
+.el-pagination__total {
+  color: $F--pagination-total-jump-color;
+}
+.el-pagination__jump {
+  color: $F--pagination-total-jump-color;
+}

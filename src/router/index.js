@@ -84,6 +84,12 @@ export const constantRoutes = [
         meta: { title: 'Radio', icon: 'table' }
       },
       {
+        path: 'pagination',
+        name: 'Pagination',
+        component: () => import('@/views/pagination/index'),
+        meta: { title: 'Pagination', icon: 'table' }
+      },
+      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
