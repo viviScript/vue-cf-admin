@@ -1,3 +1,7 @@
+/* Button
+-------------------------- */
+/* Button默认样式
+-------------------------- */
 .default-btn {
   font-size: $--default-button-font-size;
   color: $--default-button-color;
@@ -30,7 +34,8 @@
     border-color: transparent;
   }
 }
-
+/* 红色按钮
+-------------------------- */
 .btn-red{
   @include button-color(
       $--red-button-color,
@@ -45,7 +50,8 @@
       $--red-button-disable-border
   )
 }
-
+/* 蓝色按钮
+-------------------------- */
 .btn-blue{
   @include button-color(
       $--blue-button-color,
@@ -60,7 +66,8 @@
       $--blue-button-disable-border
   )
 }
-
+/* 黄色按钮
+-------------------------- */
 .btn-yellow{
   @include button-color(
       $--yellow-button-color,
@@ -75,7 +82,8 @@
       $--yellow-button-disable-border
   )
 }
-
+/* 深蓝按钮
+-------------------------- */
 .btn-light{
   @include button-color(
       $--light-button-color,

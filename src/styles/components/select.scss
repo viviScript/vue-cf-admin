@@ -1,0 +1,58 @@
+/* Select
+-------------------------- */
+/* Select 下拉框默认样式
+-------------------------- */
+.el-select-dropdown {
+  color: $F--select-dropdown-color;
+  background: $F--select-dropdown-background;
+  border: $F--select-dropdown-border;
+  box-shadow: $F--select-dropdown-box-shadow;
+  li {
+    color: $F--select-dropdown-li-color;
+    &:hover{
+      color: $F--select-dropdown-li-hover-color;
+      background-color: $F--select-dropdown-li-hover-background;
+    }
+  }
+}
+/* Select 下拉框 鼠标移入 边框色
+-------------------------- */
+.el-select:hover .el-input__inner {
+  border-color: #0095fa;
+}
+/* Select 下拉框 禁用 鼠标移入 边框色
+-------------------------- */
+.el-select .el-input.is-disabled .el-input__inner:hover {
+  border-color: #0095fa;
+}
+/* Select 下拉框单列 鼠标移入 背景色
+-------------------------- */
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  color: $F--select-dropdown-item-hover-color;
+  background-color: $F--select-dropdown-item-hover-background;
+}
+/* Select 下拉框单列禁用 鼠标移入 背景色
+-------------------------- */
+.el-select-dropdown__item.is-disabled:hover {
+  background-color: transparent;
+}
+
+/* Select 多选 删除标签背景色 字体色
+-------------------------- */
+.el-select .el-tag__close.el-icon-close {
+  background-color: rgba(0,90,150,0.4);
+  //border:1px solid rgba(0,90,150,1);
+  color: #FFFFFF;
+}
+/* Select 多选 鼠标移入 删除标签背景色 字体色
+-------------------------- */
+.el-select .el-tag__close.el-icon-close:hover {
+  background-color: rgba(0,90,150,1);
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+  background-color: rgba(0,150,250, 0.2);
+}
+
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover {
+  background-color: rgba(0,150,250, 0.2);
+}

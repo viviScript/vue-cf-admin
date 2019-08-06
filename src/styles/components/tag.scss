@@ -1,3 +1,14 @@
+
+/* Tag
+-------------------------- */
+/* Tag标签 默认样式
+-------------------------- */
+.el-tag.el-tag--info {
+  background-color: $F--tag-info-background-color;
+  border-color: $F--tag-info-border-color;
+  color: $F--tag-info-color;
+}
+
 .default-tag {
   padding: 0 4px;
   height: 16px;
@@ -21,3 +32,5 @@
 .tag-green {
   @include tag-color($--tag-green-color, $--tag-green-background-color)
 }
+
+

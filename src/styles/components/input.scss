@@ -100,22 +100,4 @@
   background: $F--input__count-background;
 }
 
-/* select下拉框
--------------------------- */
-.el-select-dropdown {
-  color: $F--select-dropdown-color;
-  background: $F--select-dropdown-background;
-  border: $F--select-dropdown-border;
-  box-shadow: $F--select-dropdown-box-shadow;
-  li {
-    color: $F--select-dropdown-li-color;
-    &:hover{
-      color: $F--select-dropdown-li-hover-color;
-      background-color: $F--select-dropdown-li-hover-background;
-    }
-  }
-}
-.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
-  color: $F--select-dropdown-item-hover-color;
-  background-color: $F--select-dropdown-item-hover-background;
-}
+
