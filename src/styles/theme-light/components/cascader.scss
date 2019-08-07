@@ -1,0 +1,41 @@
+/* Cascader
+-------------------------- */
+/* Cascader 级联选择器 默认样式
+-------------------------- */
+$F--cascader-dropdown-background: rgba(0,47,84,1) !default;
+$F--cascader-dropdown-border-color: rgba(0,150,250,1) !default;
+$F--cascader-dropdown-box-shadow: #0095fa 0 0 8px inset !default;
+
+/* Cascader 级联选择器 默认 文字颜色
+-------------------------- */
+$F--cascader-menu-color: #CCCCCC !default;
+$F--cascader-menu-border-right-color: rgba(0,150,250,1) !default;
+
+/* Cascader 鼠标移入 非禁用 选中 背景色
+-------------------------- */
+$F--cascader-node-not-isDisabled-hover-focus-background: rgba(0,150,250, 0.2) !default;
+
+/* Cascader 禁用 字体色
+-------------------------- */
+$F--cascader-node-isDisabled-color: rgba(255,255,255, 0.2) !default;
+
+/* Cascader 多选 删除标签背景色 字体色
+-------------------------- */
+$F--cascader-tag-close-background: rgba(0,90,150,0.4) !default;
+$F--cascader-tag-close-color: #FFFFFF !default;
+
+/* Cascader 多选 鼠标移入 删除标签背景色 字体色
+-------------------------- */
+$F--cascader-tag-close-hover-background: rgba(0,90,150,1) !default;
+
+/* Cascader 搜索 输入框背景色
+-------------------------- */
+$F--cascader-search-input-background: transparent !default;
+
+/* Cascader 级联面板 背景色
+-------------------------- */
+$F--cascader-panel-background: rgba(0,47,84,1) !default;
+
+/* Cascader 级联面板 边框色
+-------------------------- */
+$F--cascader-panel-isBordered-border-color: rgba(0,150,250,1) !default;

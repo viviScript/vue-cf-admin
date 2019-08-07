@@ -1,0 +1,54 @@
+/* Cascader
+-------------------------- */
+/* Cascader 级联选择器 默认样式
+-------------------------- */
+.el-cascader__dropdown {
+  background: $F--cascader-dropdown-background;
+  border-color: $F--cascader-dropdown-border-color;
+  box-shadow: $F--cascader-dropdown-box-shadow;
+}
+
+/* Cascader 级联选择器 默认 文字颜色
+-------------------------- */
+.el-cascader-menu {
+  color: $F--cascader-menu-color;
+  border-right-color: $F--cascader-menu-border-right-color;
+}
+/* Cascader 鼠标移入 非禁用 选中 背景色
+-------------------------- */
+.el-cascader-node:not(.is-disabled):hover, .el-cascader-node:not(.is-disabled):focus {
+  background: $F--cascader-node-not-isDisabled-hover-focus-background;
+}
+/* Cascader 禁用 字体色
+-------------------------- */
+.el-cascader-node.is-disabled {
+  color: rgba(255,255,255, 0.2);
+}
+/* Cascader 多选 删除标签背景色 字体色
+-------------------------- */
+.el-cascader__tags .el-tag .el-icon-close {
+  background-color: $F--cascader-tag-close-background;
+  color: $F--cascader-tag-close-color;
+}
+/* Cascader 多选 鼠标移入 删除标签背景色 字体色
+-------------------------- */
+.el-cascader__tags .el-tag .el-icon-close:hover {
+  background-color: $F--cascader-tag-close-hover-background;
+}
+
+/* Cascader 搜索 输入框背景色
+-------------------------- */
+.el-cascader__search-input {
+  background: $F--cascader-search-input-background;
+}
+
+/* Cascader 级联面板 背景色
+-------------------------- */
+.el-cascader-panel {
+  background: $F--cascader-panel-background;
+}
+/* Cascader 级联面板 边框色
+-------------------------- */
+.el-cascader-panel.is-bordered {
+  border-color: $F--cascader-panel-isBordered-border-color;
+}

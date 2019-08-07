@@ -96,6 +96,12 @@ export const constantRoutes = [
         meta: { title: 'Select', icon: 'table' }
       },
       {
+        path: 'cascader',
+        name: 'Cascader',
+        component: () => import('@/views/cascader/index'),
+        meta: { title: 'Cascader', icon: 'table' }
+      },
+      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),

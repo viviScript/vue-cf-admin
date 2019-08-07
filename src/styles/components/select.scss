@@ -18,12 +18,12 @@
 /* Select 下拉框 鼠标移入 边框色
 -------------------------- */
 .el-select:hover .el-input__inner {
-  border-color: #0095fa;
+  border-color: $F--select-hover-border-color;
 }
 /* Select 下拉框 禁用 鼠标移入 边框色
 -------------------------- */
 .el-select .el-input.is-disabled .el-input__inner:hover {
-  border-color: #0095fa;
+  border-color: $F--select-hover-border-color;
 }
 /* Select 下拉框单列 鼠标移入 背景色
 -------------------------- */
@@ -34,25 +34,34 @@
 /* Select 下拉框单列禁用 鼠标移入 背景色
 -------------------------- */
 .el-select-dropdown__item.is-disabled:hover {
-  background-color: transparent;
+  background-color: $F--select-dropdown-item-isDisabled-hover-background;
 }
 
 /* Select 多选 删除标签背景色 字体色
 -------------------------- */
 .el-select .el-tag__close.el-icon-close {
-  background-color: rgba(0,90,150,0.4);
+  background-color: $F--select-tag-close-background;
   //border:1px solid rgba(0,90,150,1);
-  color: #FFFFFF;
+  color: $F--select-tag-close-color;
 }
+
 /* Select 多选 鼠标移入 删除标签背景色 字体色
 -------------------------- */
 .el-select .el-tag__close.el-icon-close:hover {
-  background-color: rgba(0,90,150,1);
+  background-color: $F--select-tag-close-hover-background;
 }
+/* Select 多选 选中 背景色
+-------------------------- */
 .el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
-  background-color: rgba(0,150,250, 0.2);
+  background-color: $F--select-dropdown-IsMultiple-selected-background;
 }
-
+/* Select 多选 鼠标移入 背景色
+-------------------------- */
 .el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover {
-  background-color: rgba(0,150,250, 0.2);
+  background-color: $F--select-dropdown-IsMultiple-selected-hover-background;
+}
+/* Select 分组 分割线
+-------------------------- */
+.el-select-group__wrap:not(:last-of-type)::after {
+  background: $F--select-group-wrap--after-background;
 }

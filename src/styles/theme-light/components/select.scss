@@ -11,5 +11,36 @@ $F--select-dropdown-li-color: #ffffff !default;
 $F--select-dropdown-li-hover-color: #ffffff !default;
 $F--select-dropdown-li-hover-background: rgba(0, 150, 250, 0.2) !default;
 
+/* Select 下拉框 鼠标移入 边框色
+-------------------------- */
+$F--select-hover-border-color: #0095fa !default;
+
+/* Select 下拉框单列 鼠标移入 背景色
+-------------------------- */
 $F--select-dropdown-item-hover-color:  #ffffff !default;
 $F--select-dropdown-item-hover-background: rgba(0, 150, 250, 0.2) !default;
+
+/* Select 下拉框单列禁用 鼠标移入 背景色
+-------------------------- */
+$F--select-dropdown-item-isDisabled-hover-background: transparent !default;
+
+/* Select 多选 删除标签背景色 字体色
+-------------------------- */
+$F--select-tag-close-background: rgba(0,90,150,0.4) !default;
+$F--select-tag-close-color: #FFFFFF !default;
+
+/* Select 多选 鼠标移入 删除标签背景色 字体色
+-------------------------- */
+$F--select-tag-close-hover-background: rgba(0,90,150,1) !default;
+
+/* Select 多选 选中 背景色
+-------------------------- */
+$F--select-dropdown-IsMultiple-selected-background: transparent !default;
+
+/* Select 多选 鼠标移入 背景色
+-------------------------- */
+$F--select-dropdown-IsMultiple-selected-hover-background: rgba(0,150,250, 0.2) !default;
+
+/* Select 分组 分割线
+-------------------------- */
+$F--select-group-wrap--after-background: rgba(0,90,150,0.6) !default;
