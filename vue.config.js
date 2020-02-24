@@ -1,12 +1,23 @@
 'use strict';
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // 静态文件拷贝插件
+const CompressionPlugin = require('compression-webpack-plugin'); // gzip压缩
+// 定义压缩文件类型
+const productionGzipExtensions = ['js', 'css'];
+
 const defaultSettings = require('./src/config/settings.js');
+const cdn = {
+  js: [
+    // 可视化 js
+    // 'http://192.168.0.4:8080/api-ksh/api?v=1.0&system=cs-ksh-home'
+  ]
+};
 
 function resolve(dir) {
   return path.join(__dirname, dir);
 }
 
-const name = defaultSettings.title || '接处警一体化'; // page title
+const name = defaultSettings.title || '一体化指挥调度系统'; // page title
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
 // For example, Mac: sudo npm run
@@ -22,7 +33,7 @@ module.exports = {
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
   // 部署应用包时的基本 URL
-  publicPath: '/',
+  publicPath: './',
   // 生成的生产环境构建文件的目录
   outputDir: 'dist',
   // 放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
@@ -54,15 +65,35 @@ module.exports = {
   },
   // corsUseCredentials: false,
   // webpack 配置，键值对象时会合并配置，为方法时会改写配置
-  configureWebpack: {
-    // provide the app's title in webpack's name field, so that
-    // it can be accessed in index.html to inject the correct title.
-    name: name,
-    resolve: {
-      alias: {
-        '@': resolve('src')
-      }
+  configureWebpack: config => {
+    const pluginData = [
+      new CopyWebpackPlugin([{
+        from: path.resolve(__dirname, './src/assets'), // 定义要拷贝的源文件
+        to: './static', // 定义要拷贝到的目标文件夹
+        ignore: ['.*'] // 忽略拷贝指定的文件
+      }])
+    ];
+    if (process.env.NODE_ENV === 'production') {
+      pluginData.push(new CompressionPlugin({
+        filename: '[path].gz[query]',
+        algorithm: 'gzip',
+        test: new RegExp('\\.(' + productionGzipExtensions.join('|') + ')$'), // 匹配文件名
+        minRatio: 0.8,
+        threshold: 10240, // 对超过10K的数据进行压缩
+        deleteOriginalAssets: false // 是否删除源文件
+      }));
     }
+    return {
+      // provide the app's title in webpack's name field, so that
+      // it can be accessed in index.html to inject the correct title.
+      name: name,
+      resolve: {
+        alias: {
+          '@': resolve('src')
+        }
+      },
+      plugins: pluginData
+    };
   },
   // webpack 链接 API，用于生成和修改 webapck 配置
   chainWebpack(config) {
@@ -101,7 +132,10 @@ module.exports = {
         return options;
       })
       .end();
-
+    config.plugin('html').tap(args => {
+      args[0].cdn = cdn;
+      return args;
+    });
     config
     // https://webpack.js.org/configuration/devtool/#development
       .when(process.env.NODE_ENV === 'development',
@@ -115,7 +149,7 @@ module.exports = {
             .plugin('ScriptExtHtmlWebpackPlugin')
             .after('html')
             .use('script-ext-html-webpack-plugin', [{
-            // `runtime` must same as runtimeChunk name. default is `runtime`
+              // `runtime` must same as runtimeChunk name. default is `runtime`
               inline: /runtime\..*\.js$/
             }])
             .end();
